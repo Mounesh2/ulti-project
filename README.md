@@ -16,7 +16,7 @@ npm test
 
 Runs tests in interactive watch mode.
 
-npm run build
+npm run dev
 
 Builds the app for production in the build folder.
 Optimizes the code for best performance.
@@ -29,3 +29,4 @@ Note: This action is irreversible.
 Learn More
 
 Refer to the official React documentation to learn more about React.
+
