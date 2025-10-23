@@ -29,7 +29,9 @@ const App: React.FC = () => {
 
   // Initialize socket connection
   useEffect(() => {
-    const newSocket = io('http://localhost:5000');
+    // Use environment variable for server URL, fallback to localhost for development
+    const serverUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:5000';
+    const newSocket = io(serverUrl);
     setSocket(newSocket);
 
     newSocket.on('connect', () => {
